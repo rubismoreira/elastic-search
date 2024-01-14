@@ -1,0 +1,56 @@
+{
+  "womens_clothing" : {
+    "mappings" : {
+      "properties" : {
+        "Age" : {
+          "type" : "integer"
+        },
+        "Class Name" : {
+          "type" : "keyword"
+        },
+        "Clothing ID" : {
+          "type" : "integer",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "Department Name" : {
+          "type" : "keyword"
+        },
+        "Division Name" : {
+          "type" : "keyword"
+        },
+        "Positive Feedback Count" : {
+          "type" : "integer"
+        },
+        "Rating" : {
+          "type" : "float"
+        },
+        "Recommended IND" : {
+          "type" : "integer"
+        },
+        "Review Text" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "Title" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
