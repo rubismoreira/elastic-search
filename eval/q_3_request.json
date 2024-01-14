@@ -1,0 +1,40 @@
+{
+  "size": 0,
+  "aggs": {
+    "empty_class_names": {
+      "filter": {
+        "term": {
+          "Class Name": ""
+        }
+      }
+    },
+    "empty_department_name": {
+      "filter": {
+        "term": {
+          "Department Name": ""
+        }
+      }
+    },
+    "empty_division_name": {
+      "filter": {
+        "term": {
+          "Division Name": ""
+        }
+      }
+    },
+    "empty_title": {
+      "filter": {
+        "term": {
+          "Title.keyword": ""
+        }
+      }
+    },
+    "empty_review": {
+      "filter": {
+        "term": {
+          "Review Text.keyword": ""
+        }
+      }
+    }
+  }
+}

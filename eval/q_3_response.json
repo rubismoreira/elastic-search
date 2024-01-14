@@ -1,0 +1,35 @@
+{
+  "took": 3,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "empty_class_names": {
+      "doc_count": 14
+    },
+    "empty_department_name": {
+      "doc_count": 14
+    },
+    "empty_division_name": {
+      "doc_count": 14
+    },
+    "empty_review": {
+      "doc_count": 845
+    },
+    "empty_title": {
+      "doc_count": 3810
+    }
+  }
+}
