@@ -1,5 +1,5 @@
 {
-  "took": 2,
+  "took": 6,
   "timed_out": false,
   "_shards": {
     "total": 1,
@@ -16,8 +16,8 @@
     "hits": []
   },
   "aggregations": {
-    "value_count": {
-      "value": 23486
+    "product_count": {
+      "value": 1206
     }
   }
 }

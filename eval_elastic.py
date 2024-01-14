@@ -11,14 +11,18 @@ client = Elasticsearch(hosts = "https://elastic:datascientest@localhost:9200",
 
 # Specify your question number here.
 # If you are making multiple requests for the same question, write "1-1", "1-2" ext...
-question_number = "1-2"
+question_number = "2-4"
 
 query = {
-  "query": {
-    "match_all": {}
+  "size": 0,
+  "aggs": {
+    "product_count": {
+      "cardinality": {
+        "field": "Clothing ID.keyword"
+      }
+    }
   }
 }
-
 
 response = client.search(index="womens_clothing", body=query)
 

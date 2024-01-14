@@ -12,6 +12,6 @@ es = Elasticsearch(hosts = "https://elastic:datascientest@localhost:9200",
 try:
     with open('Womens_Clothing.csv', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        helpers.bulk(es, reader, index='womens_clothing')
+        helpers.bulk(es, reader, index='test_women')
 except Exception as ela :
     print(str(ela))

@@ -1,8 +1,8 @@
 {
   "size": 0,
   "aggs": {
-    "value_count": {
-      "value_count": {
+    "product_count": {
+      "cardinality": {
         "field": "Clothing ID.keyword"
       }
     }
