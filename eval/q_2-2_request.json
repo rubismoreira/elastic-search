@@ -1,0 +1,10 @@
+{
+  "size": 0,
+  "aggs": {
+    "type_count": {
+      "cardinality": {
+        "field": "Department Name"
+      }
+    }
+  }
+}

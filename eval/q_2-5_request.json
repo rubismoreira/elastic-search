@@ -1,0 +1,17 @@
+{
+  "size": 0,
+  "aggs": {
+    "agg_division_name": {
+      "terms": {
+        "field": "Division Name"
+      },
+      "aggs": {
+        "department_count": {
+          "cardinality": {
+            "field": "Department Name"
+          }
+        }
+      }
+    }
+  }
+}
